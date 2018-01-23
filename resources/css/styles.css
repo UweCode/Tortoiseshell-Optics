@@ -78,4 +78,42 @@ a {
 
 /* about section */
 
+.about {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 3rem auto;
+  width: 29rem;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 8rem;
+  width: 7rem;
+}
+
+.servicesImage {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  width: 7rem;
+}
+
+#exams img {
+  width: 3.5rem;
+  height: auto;
+}
+
+#fittings img, #delivery img {
+  width: 5rem;
+  height: auto;
+}
+
 /* footer */
