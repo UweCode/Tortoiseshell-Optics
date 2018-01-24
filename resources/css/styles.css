@@ -76,9 +76,16 @@ a {
   padding: 1.5rem 5rem;
 }
 
-/* about section */
+/* info section */
+
+.info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
 
 .about {
+  flex: 1;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -123,6 +130,7 @@ h3 {
 }
 
 .philosophyAndAppointments {
+  flex: 1;
   display: flex;
   flex-flow: nowrap;
   justify-content: center;
