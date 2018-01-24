@@ -5,12 +5,6 @@ html, body {
   line-height: 1.4;
 }
 
-h5 {
-  font-size: 2rem;
-  line-height: 1.2rem;
-  text-transform: uppercase;
-}
-
 /* content */
 
 .content {
@@ -20,6 +14,12 @@ h5 {
 }
 
 /* header section */
+
+h5 {
+  font-size: 2rem;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
 
 .headerSection {
   background-image: url("../../resources/images/glasses-bg.png");
@@ -67,7 +67,7 @@ a {
   display: flex;
   justify-content: flex-end;
   margin: 0 auto;
-  max-width: 1032px;
+  width: 1032px;
 }
 
 .bannerText {
@@ -116,4 +116,63 @@ a {
   height: auto;
 }
 
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.philosophyAndAppointments {
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+  width: 1032px;
+}
+
+.philosophyAndAppointmentsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 35%;
+}
+
+.philosophyAndAppointmentsContainer p {
+  text-align: left;
+}
+
+#philosophyContainer {
+  margin-right: 5%;
+}
+
+.philosophyAndAppointmentsHeader {
+  background-color: cadetblue;
+  color: white;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1.25rem;
+  text-align: left;
+  width: 10rem;
+}
+
 /* footer */
+
+footer {
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.footerContent {
+  display: inline-flex;
+  margin: 0 auto;
+  padding: 4rem;
+  width: 888px;
+}
+
+.footerContent img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
