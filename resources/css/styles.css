@@ -17,6 +17,7 @@ html, body {
 
 h5 {
   font-size: 2rem;
+  font-weight: bold;
   line-height: 1.2rem;
   text-transform: uppercase;
 }
@@ -61,6 +62,10 @@ a {
   color: white;
   margin-left: 2rem;
   text-decoration: none;
+}
+
+#shortMenu {
+  display: none;
 }
 
 .banner {
@@ -174,10 +179,10 @@ footer {
 }
 
 .footerContent {
-  display: inline-flex;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
   padding: 4rem;
-  width: 888px;
+  width: 100%;
 }
 
 .footerContent img {
@@ -187,7 +192,7 @@ footer {
 
 /* media queries */
 
-@media only screen and (max-width: 1048px) {
+@media only screen and (max-width: 1048px) and (min-width: 827px) {
 
   .content {
     width: 100%;
@@ -219,11 +224,123 @@ footer {
 
   h5 {
     font-size: 1.33rem;
+    font-weight: bold;
     text-transform: uppercase;
   }
-
 }
 
 @media only screen and (max-width: 826px) {
 
-}
+  .content {
+    width: 100%;
+  }
+
+  .services span, .philosophyAndAppointmentsContainer p {
+    font-size: 0.77rem;
+  }
+
+  .headerSection {
+    background-image: url("../../resources/images/glasses-bg.png");
+    background-repeat: no-repeat;
+    background-position: 20%;
+    background-size: cover;
+    height: 17rem;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  header {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .longMenu {
+    display: none;
+  }
+
+  #shortMenu {
+    display: block;
+  }
+
+  .banner {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .bannerText {
+    background-color: white;
+    margin-top: 9rem;
+    padding: 1rem;
+  }
+
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 3.77rem auto;
+    width: 9rem;
+  }
+
+  .services {
+    height: auto;
+    margin-bottom: 1.54rem;
+  }
+
+  .servicesImage {
+    margin-bottom: 0.8rem;
+  }
+
+  #examsImg {
+    height: 60%;
+  }
+  #fittingsImg {
+    height: 40%;
+  }
+  #deliveryImg {
+    height: 44%;
+  }
+
+  #delivery {
+    margin-bottom: 0;
+  }
+
+  #philosophyContainer {
+    margin: 0;
+  }
+
+  .philosophyAndAppointments {
+    flex-flow: wrap;
+    justify-content: center;
+    padding-bottom: 0;
+    width: auto;
+  }
+
+  .philosophyAndAppointmentsContainer {
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+  }
+
+  .philosophyAndAppointmentsHeader {
+      text-align: center;
+      padding: 0.5rem 0;
+      width: 100%;
+  }
+
+  .philosophyAndAppointmentsContainer p {
+    padding: 1rem 0.5rem 4rem 0.5rem;
+    text-align: left;
+  }
+
+  #copyright, #companyName {
+    display: none;
+  }
